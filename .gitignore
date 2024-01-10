@@ -1,0 +1,12 @@
+# Dotfiles
+.dotfiles.git
+
+# Node
+npm-debug.log
+
+# Mac
+.DS_Store
+
+# IntelliJ IDEA
+.idea/
+*.iml

@@ -1,0 +1,30 @@
+[user]
+	name = Martin Solli
+	email = msolli@gmail.com
+[color]
+	ui = auto
+[core]
+	autocrlf = false
+	safecrlf = true
+	excludesfile = ~/.gitignore
+[push]
+	default = tracking
+[mergetool]
+	keepBackup = true
+[alias]
+        co = checkout
+        br = branch
+        hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+        type = cat-file -t
+        dump = cat-file -p
+	lol = log --follow --find-copies-harder --graph --abbrev=4 --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %Cgreen%ai %n %C(bold blue)%aN%Creset %B'
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[pull]
+	rebase = true
+[advice]
+	detachedHead = false
+[init]
+	defaultBranch = main

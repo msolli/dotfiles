@@ -1,5 +1,5 @@
-# Postgres
-fish_add_path /Applications/Postgres.app/Contents/Versions/13/bin
+# Include local config
+test -e $HOME/.config/fish/local-config.fish; and source $HOME/.config/fish/local-config.fish
 
 # Java
 setjdk 17

@@ -1,5 +1,6 @@
 # Dotfiles
 .dotfiles.git
+.config/fish/local-config.fish
 
 # Node
 npm-debug.log
